@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#FFFFFF">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/lambang"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bawah"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/atas"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/style_relative">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/style_input"
+        android:paddingLeft="10dp"
+        android:hint="Nama" />
+        <EditText
+            android:id="@+id/pass"
+            android:inputType="textPassword"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/style_input"
+            android:paddingLeft="10dp"
+            android:hint="Password" />
+        <EditText
+            android:id="@+id/pass2"
+            android:inputType="textPassword"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/pass"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/style_input"
+            android:paddingLeft="10dp"
+            android:hint="Ulang Password" />
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="87dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/pass2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/style_input"
+            android:text="DAFTAR"
+            android:textColor="#7CCCFF"/>
+    </RelativeLayout>
+
+    </RelativeLayout>
